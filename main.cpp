@@ -3,11 +3,7 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 using namespace std;
 int main(int argc, char** argv) {
-	string A = "";
-	string B = "";
-	string C = "";
-	string D = "";
-	string E = "";
+	string A;
 	string vardas;
 	cout << "Koks Jusu vardas?" << endl;
 	cin >> vardas;
@@ -25,24 +21,39 @@ int main(int argc, char** argv) {
 		A+="*";
 	}
 	A+="**";
-	cout << A << endl;
-	B+= "* ";
+	A+="\n";
+	A+= "* ";
 	for(int I = 0; I < zinute.length(); I++){
-		B+=" ";
+		A+=" ";
 	}
 	for(int H = 0; H < vardas.length() + 3; H++){
-		B+=" ";
+		A+=" ";
 	}
-	B += " *";
-	cout << B << endl;
-	C += "* ";
-	C += zinute;
-	C += ", ";
-	C += vardas;
-	C += "! *";
-	cout << C << endl;
-	D = B;
-	E = A;
-	cout << D << endl << E << endl;
+	A += " *";
+	A += "\n";
+	A += "* ";
+	A += zinute;
+	A += ", ";
+	A += vardas;
+	A += "! *";
+	A += "\n";
+		A+= "* ";
+	for(int I = 0; I < zinute.length(); I++){
+		A+=" ";
+	}
+	for(int H = 0; H < vardas.length() + 3; H++){
+		A+=" ";
+	}
+	A += " *";
+	A += "\n";
+	A += "**";
+	for(int I = 0; I < zinute.length(); I++){
+		A+="*";
+	}
+	for(int H = 0; H < vardas.length() + 3; H++){
+		A+="*";
+	}
+	A+="**";
+	cout << A << endl;
 	return 0;
 }
