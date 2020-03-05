@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
 	cin >> vardas;
 	string zinute;
 	if(vardas.back() == 'a' || vardas.back() == 'e'){
-		zinute = "Sveikas"; // ???
+		zinute = "Sveika"; // ???
 	} else {
 		zinute = "Sveikas";
 	}
